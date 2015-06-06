@@ -2,10 +2,10 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app="pictopornApp"> <!--<![endif]-->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Ephemeride des sorties</title>
+  <title>Pictoporn workshop</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -24,6 +24,8 @@
   {# CSS external files #}
   <link rel="stylesheet" href="{{ app.request.basepath }}/css/normalize.css">
   <link rel="stylesheet" href="{{ app.request.basepath }}/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ app.request.basepath }}/css/pictoporn.css">
+  <link rel="stylesheet" href="{{ app.request.basepath }}/css/format1452.css">
 </head>
 <body>
   <!--[if lt IE 7]>
@@ -54,6 +56,8 @@
   <script src="{{ app.request.basepath }}/js/jquery-1.11.3.min.js"></script>
   <script src="{{ app.request.basepath }}/js/bootstrap.min.js"></script>
   <script src="{{ app.request.basepath }}/js/plugins.js"></script>
+  <script src="{{ app.request.basepath }}/js/angular.min.js"></script>
+  <script src="{{ app.request.basepath }}/js/pictoporn.js"></script>
 
 </body>
 </html>

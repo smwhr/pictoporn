@@ -1,0 +1,35 @@
+h1{
+  float: left;
+  font-family: 'format 1452';
+  width:240px;
+  text-align: center;
+}
+
+.clear{
+  clear: both;
+}
+
+.tag{
+  width:80px;
+  height:80px;
+  display: block;
+  float:left;
+}
+
+.tag.selected{
+  background-color: yellow;
+}
+
+section.search{
+  height:50vh;
+  overflow: scroll;
+}
+section.result{
+  height:50vh;
+  overflow: scroll;
+}
+
+.no-result{
+  font-family: 'format 1452';
+  font-size: 36px;
+}

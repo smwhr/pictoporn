@@ -7,7 +7,7 @@ class HubtrafficConnector extends RestConnector{
 
   public function searchVideos($parameters){
 
-    $parameters['thumbsize']='medium';
+    $parameters['thumbsize']='small';
 
     $rawres = $this->query('GET', '/search', $parameters);
     $res = json_decode($rawres->body, true);

@@ -35,9 +35,15 @@ class FrontController{
               ];
     },
     $videos);
-
-
-    return $app->json(["success" => $videos], 404);
+    shuffle($videos);
+    $videos = array_slice($videos, 0, 21); 
+    return $app->json(["success" => $videos], 200);
   }
-  
+  public function proxyimageAction(Application $app, Request $request){
+    $file = $request->get('url');
+    $stream = function () use ($file) {
+       readfile($file);
+   };
+   return $app->stream($stream, 200, array('Content-Type' => 'image/jpeg'));
+  }
 }

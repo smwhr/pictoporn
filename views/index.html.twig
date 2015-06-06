@@ -2,6 +2,38 @@
 
 {% block content %}
 
-COUCOU
+<main ng-controller="SearchController as search">
+
+  <section class="search">
+  <h1>PictoPorn</h1>
+  {% for i in 1..10 %}
+  {% for tag in tags %}
+    <a href="" class="tag" ng-click="search.toggleTag($event, '{{tag.tag}}')">{{tag.svg | raw}}</a>
+  {% endfor %}
+  {% endfor %}
+    <div class="clear"></div>
+  </section>
+
+  <section class="result">
+    <!-- <span ng-repeat="tag in search.tags">{[{tag}]}</span> -->
+    <div ng-show="search.videos.length > 0" class="result-items">
+        <a class="result-item" ng-href="{[{video.url}]}" target="_blank" ng-repeat="video in search.videos" title="{[{video.title}]}">
+          <canvas data-thumb="{[{video.thumb}]}" width="150" height="112" class="video_thumb" drawing></canvas>
+        </a>
+    </div>
+
+    <div ng-show="search.videos.length == 0 && search.tags.length > 0 && search.loading == false">
+      <p class="no-result">Désolé pas de résultats pour cette combinaison de tags</p>
+    </div>
+
+    <div ng-show="search.loading"><p class="no-result">Recherche en cours ...</p></div>
+
+    <div ng-show="search.tags.length == 0">
+      <p class="no-result">Choisissez un ou plusieurs pictotags pour lancer une recherche</p>
+    </div>
+
+  </section>
+
+</main>
 
 {% endblock %}
