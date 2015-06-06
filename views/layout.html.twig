@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ephemeride des sorties</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="fb:app_id" content="MY_FB_APP_ID"> 
+
+  <meta property="og:title" content="Picto-porno"/>
+  <meta property="og:description" content="À quoi pourrait bien ressembler le sexe en pictogramme&nbsp;? Et comment faire pour que tout le monde s&rsquo;y retrouve&nbsp;? Un fantasme peut-il se résumer en un dessin&nbsp;? Flirtmoji s’est déjà frotté à cette problématique complexe, avec un succès relatif. VTF (Velvetyne Type Foundry) propose de relever le défi avec un workshop libre et gratuit qui se tiendra du [&hellip;]"/>
+  <meta property="og:image" content="http://{{ app.request.host }}{{ app.request.basepath }}/img/og-image.jpg">
+  <meta property="og:url" content="http://{{ app.request.host }}">
+
+  
+  <meta property="og:type" content="website"/>
+  <meta property="og:image:width" content="630"/>
+  <meta property="og:image:height" content="615"/>
+
+  {# CSS external files #}
+  <link rel="stylesheet" href="{{ app.request.basepath }}/css/normalize.css">
+  <link rel="stylesheet" href="{{ app.request.basepath }}/css/bootstrap.min.css">
+</head>
+<body>
+  <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  {# Content block #}
+  <div class="container">
+    {% block content %}
+    {% endblock %}
+  </div>
+
+  {# Facebook #}
+  {# <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&appId=MY_FB_APP_ID&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script> #}
+
+  {# Twitter  #}
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+  {# Javascript external files #}
+  <script src="{{ app.request.basepath }}/js/modernizr-2.6.2.min.js"></script>
+  <script src="{{ app.request.basepath }}/js/jquery-1.11.3.min.js"></script>
+  <script src="{{ app.request.basepath }}/js/bootstrap.min.js"></script>
+  <script src="{{ app.request.basepath }}/js/plugins.js"></script>
+
+</body>
+</html>
