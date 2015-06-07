@@ -38,11 +38,13 @@ h1, h2, h3,.no-result{
 section.search{
   height:48vh;
   overflow: scroll;
+  overflow-x:hidden;
 }
 section.result{
   padding-top: 20px;
   height:47vh;
   overflow: scroll;
+  overflow-x:hidden;
 }
 
 footer{
