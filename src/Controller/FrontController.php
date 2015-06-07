@@ -18,6 +18,16 @@ class FrontController{
     
   }
 
+  public function creditsAction(Application $app, Request $request) {
+
+    $response = new Response(
+      $app['twig']->render('credits.html.twig')
+    );
+    return $response;
+
+    
+  }
+
   public function searchAction(Application $app, Request $request){
 
     $tags = $request->get('tags', []);

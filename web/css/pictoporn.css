@@ -1,6 +1,11 @@
-h1{
-  float: left;
+h1, h2, h3{
+  
   font-family: 'format 1452';
+
+}
+
+.home .h1{
+  float: left;
   width:228px;
   text-align: center;
 }
@@ -47,4 +52,13 @@ footer{
   height: 105px;
   margin-right:2px;
   margin-bottom: 2px;
+}
+
+
+.credits{
+  margin-top:50px;
+}
+
+.credits ul {
+  list-style-type: none;
 }
