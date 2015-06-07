@@ -1,0 +1,10 @@
+﻿/* @font-face kit by Fonts2u (http://www.fonts2u.com) */ 
+@font-face {
+  font-family:"Free Sans";
+  src:url("../fonts/FreeSans.eot?") format("eot"),
+      url("../fonts/FreeSans.woff") format("woff"),
+      url("../fonts/FreeSans.ttf") format("truetype"),
+      url("../fonts/FreeSans.svg#FreeSans") format("svg");
+  font-weight:normal;
+  font-style:normal;
+}

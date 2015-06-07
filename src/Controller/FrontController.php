@@ -8,7 +8,9 @@ use Symfony\Component\HttpFoundation\Request;
 class FrontController{
 
   public function indexAction(Application $app, Request $request) {
-    $tags = $app['models']('Tag')->fetchAll();
+    $tagManager = $app['models']('Tag');
+    $q = $tagManager->query()->where('visible = 1')->orderBy('prio', 'DESC');
+    $tags = $app['models']('Tag')->fetchAll($q);
 
     $response = new Response(
       $app['twig']->render('index.html.twig', compact('tags'))

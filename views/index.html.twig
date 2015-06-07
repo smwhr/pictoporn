@@ -6,7 +6,7 @@
 
   <section class="search">
   <h1>PictoPorn</h1>
-  {% for i in 1..10 %}
+  {% for i in 1..1 %}
   {% for tag in tags %}
     <a href="" class="tag" ng-click="search.toggleTag($event, '{{tag.tag}}')">{{tag.svg | raw}}</a>
   {% endfor %}
@@ -35,7 +35,8 @@
   </section>
 
   <footer>
-    Pictoporn est not-safe-for-work et globalement interdit aux mineurs. Partez vite si vous êtes un enfant. <br> Le site a été réalisé dans le cadre d'un <a href="http://velvetyne.fr/reproduction/" target="_blank">workshop</a> organisé par <a href="http://velvetyne.fr/" target="_blank">la fonderie VTF</a> à <a href="http://www.lagenerale.fr/">La Générale</a> du 4 au 7 juin 2015.
+    Pictoporn est not-safe-for-work et globalement interdit aux mineurs. Partez vite si vous êtes un enfant. [<a href="/credits">Crédits &amp; À propos</a>]<br>
+    Le site a été réalisé dans le cadre d'un <a href="http://velvetyne.fr/reproduction/" target="_blank">workshop</a> organisé par <a href="http://velvetyne.fr/" target="_blank">la fonderie VTF</a> à <a href="http://www.lagenerale.fr/">La Générale</a> du 4 au 7 juin 2015. 
   </footer>
 
 </main>
