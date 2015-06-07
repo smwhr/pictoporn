@@ -36,7 +36,7 @@ class FrontController{
     },
     $videos);
     shuffle($videos);
-    $videos = array_slice($videos, 0, 21); 
+    $videos = array_slice($videos, 0, 24); 
     return $app->json(["success" => $videos], 200);
   }
   public function proxyimageAction(Application $app, Request $request){

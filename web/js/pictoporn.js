@@ -51,8 +51,8 @@ angular
       var thumbImage = new Image();
       thumbImage.onload = function(){
         console.log(thumb_url)
-        ctx.drawImage(thumbImage, 0, 0, 160, 120, 0, 0, 150, 112);
-        AtkinsonDithering.run(ctx, 150, 112);
+        ctx.drawImage(thumbImage, 0, 0, 160, 120, 0, 0, 140, 105);
+        AtkinsonDithering.run(ctx, 140, 105);
       }
       thumbImage.src = thumb_url;
 

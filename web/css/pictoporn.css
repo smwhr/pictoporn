@@ -1,7 +1,7 @@
 h1{
   float: left;
   font-family: 'format 1452';
-  width:240px;
+  width:228px;
   text-align: center;
 }
 
@@ -10,8 +10,8 @@ h1{
 }
 
 .tag{
-  width:80px;
-  height:80px;
+  width:76px;
+  height:76px;
   display: block;
   float:left;
 }
@@ -32,4 +32,13 @@ section.result{
 .no-result{
   font-family: 'format 1452';
   font-size: 36px;
+}
+
+.result-item{
+  display: block;
+  float:left;
+  width:140px;
+  height: 105px;
+  margin-right:2px;
+  margin-bottom: 2px;
 }
