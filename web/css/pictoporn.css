@@ -21,12 +21,18 @@ h1{
 }
 
 section.search{
-  height:50vh;
+  height:48vh;
   overflow: scroll;
 }
 section.result{
-  height:50vh;
+  height:47vh;
   overflow: scroll;
+}
+
+footer{
+  height:2vh;
+  font-size: 11px;
+  text-align: center;
 }
 
 .no-result{
