@@ -50,7 +50,6 @@ angular
       var drawing = false;
       var thumbImage = new Image();
       thumbImage.onload = function(){
-        console.log(thumb_url)
         ctx.drawImage(thumbImage, 0, 0, 160, 120, 0, 0, 140, 105);
         AtkinsonDithering.run(ctx, 140, 105);
       }
@@ -97,7 +96,6 @@ var AtkinsonDithering = {
       THRESHOLD.push(i < (GRAYS >> 1) ? [0] : [GRAYS - 1]);
     }
     var data = ctx.getImageData(0, 0, width, height);
-    console.log(data);
       AtkinsonDithering.grayscale(data);
       for (var y = 0; y < data.height; y++) {
         for (var x = 0; x < data.width; x++) {
